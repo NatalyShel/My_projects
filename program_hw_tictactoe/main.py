@@ -5,31 +5,31 @@
 # to write a simple program which pretends to play tic-tac-toe 
 # with the user. To make it all easier for you, we've decided
 # to simplify the game. Here are our assumptions:
-# • the computer (i.e., your program) should play the game using 'X's;
-# • the user (e.g., you) should play the game using 'O's;
-# • the first move belongs to the computer -it always puts its first
+# â€¢ the computer (i.e., your program) should play the game using 'X's;
+# â€¢ the user (e.g., you) should play the game using 'O's;
+# â€¢ the first move belongs to the computer -it always puts its first
 # 'X' in the middle of the board;
-# • all the squares are numbered row by row starting with 1 the
+# â€¢ all the squares are numbered row by row starting with 1 the
 # user inputs their move by entering the number of the square they 
 # choose -the number must be valid, i.e., it must be an
 # integer, it must be greater than 0 and less than 10, and it
 # cannot point to a field which is already occupied;
-# • the program checks if the game is over -there are four possible
+# â€¢ the program checks if the game is over -there are four possible
 # verdicts: the game should continue, or the game ends with a tie, 
 # your win, or the computer's win;
-# • the computer responds with its move and the check is repeated;
-# • don't implement any form of artificial intelligence -a random
+# â€¢ the computer responds with its move and the check is repeated;
+# â€¢ don't implement any form of artificial intelligence -a random
 # field choice made by the computer is good enough for the game.
 # Implement the following features:
-# • the board should be stored as a three-element list, while each
+# â€¢ the board should be stored as a three-element list, while each
 # element is another three-element list (the inner lists represent
 # rows) so that all of the squares may be accessed using the
 # following syntax: board[row][column]
-# • each of the inner list's elements can contain 'O', 'X', or a digit
+# â€¢ each of the inner list's elements can contain 'O', 'X', or a digit
 # representing the square's number (such a square is considered free)
-# • the board's appearance should be exactly the same as the one
+# â€¢ the board's appearance should be exactly the same as the one
 # presented in the example.
-# • implement the functions defined for you in the editor.
+# â€¢ implement the functions defined for you in the editor.
 ##########################################################################
 
 from sys import path
@@ -86,7 +86,7 @@ while True:
         while rc != True:
             comp_step = randrange(8)
             #print("randrange", comp_step) # just to show result of random
-            rc = check_step(board, comp_step)
+            rc = check_func.check_step(board, comp_step)
     
     # step by computer
     board = board_func.move_on_board(board, 'X', comp_step)
