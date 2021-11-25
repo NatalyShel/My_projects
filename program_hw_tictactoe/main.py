@@ -74,7 +74,7 @@ while True:
         break
 
     # generate computer's step
-    comp_step = randrange(8)
+    comp_step = randrange(9)
     #print("randrange", comp_step)   # just to show result of random
     
     rc = check_func.check_step(board, comp_step)
@@ -84,7 +84,7 @@ while True:
         break
     else:
         while rc != True:
-            comp_step = randrange(8)
+            comp_step = randrange(9)
             #print("randrange", comp_step) # just to show result of random
             rc = check_func.check_step(board, comp_step)
     
