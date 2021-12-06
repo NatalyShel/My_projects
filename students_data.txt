@@ -1,0 +1,4 @@
+Andrew Ivanov	2.3
+Vadim Petrov	3.1
+Tanya Sidorova	4.2
+Andrew Ivanov	4
