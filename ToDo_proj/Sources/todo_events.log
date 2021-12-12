@@ -1,0 +1,5 @@
+DEBUG - Connection to todo.db established.
+DEBUG - New task added: 'ere'.
+WARNING - Invalid task id!
+DEBUG - Task with id=8 deleted.
+DEBUG - Exit from ToDo application, connection closed.
